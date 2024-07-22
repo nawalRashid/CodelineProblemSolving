@@ -8,14 +8,14 @@ def get_sublist(lst, start, end):
 
 def main():
 
-    # Get user input for the list of integers
-    lst = list(map(int, input("Enter the list of integers (space-separated): ").split()))
+    # Get user input 
+    lst= list(map(int, input("Enter the list of integers (space-separated): ").split()))
     
-    # display the list of squares of even numbers
+    # display the list
     even_squares = get_even_squares(lst)
     print(f"List of squares of even numbers: {even_squares}")
 
-    # Get user input for start and end indices 
+    # Get user input 
     start_index = int(input("Enter start index: "))
     end_index = int(input("Enter end index: "))
     sublist = get_sublist(lst, start_index, end_index)
